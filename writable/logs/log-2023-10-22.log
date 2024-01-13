@@ -1,0 +1,7 @@
+CRITICAL - 2023-10-22 01:03:30 --> Use of undefined constant PATH - assumed 'PATH' (this will throw an Error in a future version of PHP)
+in APPPATH\Controllers\UploadController.php on line 7.
+ 1 APPPATH\Controllers\UploadController.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant PATH - assumed \'PATH\' (this will throw an Error in a future version of PHP)', 'C:\\xampp\\htdocs\\myproject\\app\\Controllers\\UploadController.php', 7, [])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UploadController->uploadView()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UploadController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
