@@ -1,0 +1,21 @@
+CRITICAL - 2024-01-14 00:21:43 --> Undefined property: App\Controllers\MyController::$MyModel
+in APPPATH\Controllers\MyController.php on line 70.
+ 1 APPPATH\Controllers\MyController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\MyController::$MyModel', 'C:\\xampp\\htdocs\\myproject\\app\\Controllers\\MyController.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->getImageFileName('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 00:22:10 --> Array to string conversion
+in APPPATH\Controllers\MyController.php on line 71.
+ 1 APPPATH\Controllers\MyController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\myproject\\app\\Controllers\\MyController.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->getImageFileName('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-14 00:22:34 --> Attempt to read property "image" on array
+in APPPATH\Controllers\MyController.php on line 71.
+ 1 APPPATH\Controllers\MyController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "image" on array', 'C:\\xampp\\htdocs\\myproject\\app\\Controllers\\MyController.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->getImageFileName('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

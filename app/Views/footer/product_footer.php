@@ -2,7 +2,12 @@
     <script>
         let deleteModal
         let editModal
+        let alertModal
         let baseUrl = '<?php echo base_url();?>'
+        const numberFormat = (number) => {
+            let numFormat = new Intl.NumberFormat('de-DE').format(number)
+            return numFormat
+        }
         const showDeleteModal = (id) => {
             $('[name="deleteId"]').val(id)
             let options = {
@@ -34,16 +39,24 @@
                 }
             )
         }
+        const showAlertModal = (msg) => {
+            $('#alert').html(msg)
+            let options = {
+                backdrop: true
+            }
+            alertModal = new bootstrap.Modal('#alertModal', options)
+            alertModal.show()
+        }
         const mapData = (data) => {
             let tr = ''
             data.map( row => {
                 tr+=`<tr>
-                        <td><${row['timestamp']}<td>
+                        <td><${row['timestamp']}</td>
                         <td>${row['product']}</td>
                         <td>${row['category']}</td>
-                        <td>${row['qty']}</td>
-                        <td>${row['price']}</td>
-                        <td><img class="img-fluid" src="${baseUrl}assets/images/${row['image']}"></td>
+                        <td>${numberFormat(row['qty'])}</td>
+                        <td>${numberFormat(row['price'])}</td>
+                        <td><img class="img-fluid" src="${baseUrl}images/${row['image']}" width="75" height="75"></td>
                         <td>
                             <button class="btn btn-sm btn-light border" onclick="showEditModal('${row['id']}')">Edit</button>
                             <button class="btn btn-sm btn-danger" onclick="showDeleteModal('${row['id']}')">Delete</button>
@@ -56,7 +69,11 @@
             {
                 success: res => {
                     let data = JSON.parse(res)
-                    mapData(data)
+                    if(data.msg == 'error') {
+                        showAlertModal(data.err_msg)
+                    } else {
+                        mapData(data.data)
+                    }
                 }
             }
         )

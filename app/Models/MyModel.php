@@ -17,21 +17,37 @@ class MyModel extends Model {
             return $this->db->table('products')->get()->getResult();
         }
     }
-    public function insertData() {
+    public function insertData($fileName) {
         $data = array(
             'product'=>$this->input->getPost('product'),
             'category'=>$this->input->getPost('category'),
             'qty'=>$this->input->getPost('qty'),
-            'price'=>$this->input->getPost('price')
+            'price'=>$this->input->getPost('price'),
+            'image'=>$fileName
         );
         $this->db->table('products')->insert($data);
         return $this->getData();
     }
     public function deleteData() {
         $id = $this->input->getPost('deleteId');
-        $this->db->table('products')->where('id',$id)->delete();
-        return $this->getData();
+        $productData = $this->getData($id);
+        $imageFileName = $productData[0]->image;
+
+        //delete image
+        try{
+            $this->deleteImage($imageFileName);
+        } finally {
+            $this->db->table('products')->where('id',$id)->delete();
+            return $this->getData();
+        }
+        
     }
+
+    public function deleteImage($imageFileName) {
+        $dir = ROOTPATH.'public/images/'.$imageFileName;
+        unlink($dir);
+    }
+
     public function updateData() {
         $id = $this->input->getPost('editId');
         $updateData = array(
@@ -42,5 +58,8 @@ class MyModel extends Model {
         );
         $this->db->table('products')->where('id', $id)->update($updateData);
         return $this->getData();
+    }
+    public function getImageFileName($id){
+        return $this->db->table('products')->where('id',$id)->get()->getResult();
     }
 }

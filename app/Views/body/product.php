@@ -1,14 +1,14 @@
 
 
     <div class="container">
-        <div class="row mt-5">
+        <div class="row" style="margin-top:100px">
             <div class="col-3">
                 <form action="<?php echo base_url();?>insert-data" method="post" id="formInsert">
                     <input type="text" name="product" placeholder="product" class="form-control mb-2">
                     <input type="text" name="category" placeholder="category" class="form-control mb-2">
                     <input type="text" name="qty" placeholder="qty" class="form-control mb-2">
                     <input type="number" name="price" placeholder="price" class="form-control mb-2" id="price">
-                    <input type="file" name="image" class="form-control mb-2">
+                    <input type="file" enctype="multipart/form-data" name="image" class="form-control mb-2">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
@@ -51,7 +51,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="deleteModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="deleteModalLabel">Delete</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -73,7 +73,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="editModalLabel">Modal title</h1>
+                    <h1 class="modal-title fs-5" id="editModalLabel">Edit Data</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -85,6 +85,19 @@
                         <input type="text" name="newPrice" placeholder="price" class="form-control mb-2">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="alertModal" tabindex="-1" aria-labelledby="alertModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="alertModalLabel">Alert</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="alert"></div>
                 </div>
             </div>
         </div>
