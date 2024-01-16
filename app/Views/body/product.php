@@ -3,12 +3,12 @@
     <div class="container">
         <div class="row" style="margin-top:100px">
             <div class="col-3">
-                <form action="<?php echo base_url();?>insert-data" method="post" id="formInsert">
-                    <input type="text" name="product" placeholder="product" class="form-control mb-2">
+                <form action="<?php echo base_url();?>insert-data" method="post" enctype="multipart/form-data" id="formInsert">
+                    <input type="text" name="product" placeholder="product" class="form-control mb-2" required>
                     <input type="text" name="category" placeholder="category" class="form-control mb-2">
                     <input type="text" name="qty" placeholder="qty" class="form-control mb-2">
                     <input type="number" name="price" placeholder="price" class="form-control mb-2" id="price">
-                    <input type="file" enctype="multipart/form-data" name="image" class="form-control mb-2">
+                    <input type="file" name="image" class="form-control mb-2">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
@@ -38,6 +38,7 @@
                                     <td>
                                         <button class="btn btn-sm btn-light border" onclick="showEditModal('<?php echo $row->id;?>')">Edit</button>
                                         <button class="btn btn-sm btn-danger" onclick="showDeleteModal('<?php echo $row->id;?>')">Delete</button>
+                                        <button class="btn btn-sm btn-primary" onclick="showEditImageModal('<?php echo $row->id;?>')">Change Image</button>
                                     </td>
                                 </tr>
                             <?php endforeach;?>
@@ -70,7 +71,7 @@
         </div>
     </div>
     <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="editModalLabel">Edit Data</h1>
@@ -98,6 +99,23 @@
                 </div>
                 <div class="modal-body">
                     <div id="alert"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editImageModal" tabindex="-1" aria-labelledby="editImageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editImageModalLabel">Edit Image</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="<?php echo base_url();?>edit-image-data" method="post" enctype="multipart/form-data" id="formEditImage" required>
+                        <input type="hidden" name="editImageId">    
+                        <input type="file" name="newImage" class="form-control mb-2">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>

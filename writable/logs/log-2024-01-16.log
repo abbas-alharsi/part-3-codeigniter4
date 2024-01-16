@@ -1,0 +1,133 @@
+CRITICAL - 2024-01-16 02:57:06 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(72): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 02:58:37 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(72): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 02:58:45 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(72): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 02:58:54 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(72): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 02:59:12 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(72): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 02:59:54 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(72): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 03:00:19 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(72): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 03:03:31 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(72): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 03:06:56 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(72): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 03:12:40 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(73): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 03:13:12 --> Unmatched '}'
+in APPPATH\Controllers\MyController.php on line 115.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\myproject\\app\\Controllers\\MyController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MyController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MyController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\MyController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 03:13:41 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 APPPATH\Controllers\MyController.php(70): App\Models\MyModel->deleteImage('lg-monitor.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 03:17:17 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor.jpg): No such file or directory
+in APPPATH\Controllers\MyController.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Controllers\\MyController.php', 71)
+ 2 APPPATH\Controllers\MyController.php(71): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 03:22:33 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor_2.jpg): No such file or directory
+in APPPATH\Models\MyModel.php on line 48.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor_2.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Models\\MyModel.php', 48)
+ 2 APPPATH\Models\MyModel.php(48): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor_2.jpg')
+ 3 APPPATH\Controllers\MyController.php(69): App\Models\MyModel->deleteImage('lg-monitor_2.jpg')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-16 03:24:00 --> unlink(C:\xampp\htdocs\myproject\public/images/lg-monitor_2.jpg): No such file or directory
+in APPPATH\Controllers\MyController.php on line 70.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor_2.jpg): No such file or directory', 'C:\\xampp\\htdocs\\myproject\\app\\Controllers\\MyController.php', 70)
+ 2 APPPATH\Controllers\MyController.php(70): unlink('C:\\xampp\\htdocs\\myproject\\public/images/lg-monitor_2.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MyController->updateImage()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MyController))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -11,4 +11,4 @@ $routes->post('/insert-data','MyController::insertData');
 $routes->post('/delete-data', 'MyController::deleteData');
 $routes->get('/getdata/(:any)', 'MyController::getData/$1');
 $routes->post('/edit-data', 'MyController::updateData');
-$routes->get('/image/(:any)','MyController::getImageFileName/$1');
+$routes->post('/edit-image-data','MyController::updateImage');

@@ -2,6 +2,7 @@
     <script>
         let deleteModal
         let editModal
+        let editImageModal
         let alertModal
         let baseUrl = '<?php echo base_url();?>'
         const numberFormat = (number) => {
@@ -39,6 +40,14 @@
                 }
             )
         }
+        const showEditImageModal = (id) => {
+            $('[name="editImageId"]').val(id)
+            let options = {
+                backdrop: true
+            }
+            editImageModal = new bootstrap.Modal('#editImageModal',options)
+            editImageModal.show()
+        }
         const showAlertModal = (msg) => {
             $('#alert').html(msg)
             let options = {
@@ -60,6 +69,7 @@
                         <td>
                             <button class="btn btn-sm btn-light border" onclick="showEditModal('${row['id']}')">Edit</button>
                             <button class="btn btn-sm btn-danger" onclick="showDeleteModal('${row['id']}')">Delete</button>
+                            <button class="btn btn-sm btn-primary" onclick="showEditImageModal('${row['id']}')">Change Image</button>
                         </td>
                     </tr>`
             })
@@ -72,6 +82,20 @@
                     if(data.msg == 'error') {
                         showAlertModal(data.err_msg)
                     } else {
+                        mapData(data.data)
+                    }
+                }
+            }
+        )
+        $('#formEditImage').ajaxForm(
+            {
+                success: res => {
+                    let data = JSON.parse(res)
+                    if(data.msg == 'error') {
+                        editImageModal.hide()
+                        showAlertModal(data.err_msg)
+                    } else {
+                        editImageModal.hide()
                         mapData(data.data)
                     }
                 }

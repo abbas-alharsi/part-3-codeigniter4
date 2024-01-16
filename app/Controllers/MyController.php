@@ -26,8 +26,7 @@ class MyController extends BaseController {
                     'uploaded[image]',
                     'is_image[image]',
                     'mime_in[image,image/jpg,image/jpeg,image/png]',
-                    'max_size[image,100]',
-                    'max_dims[image,1024,768]'
+                    'max_size[image,100]'
                 ]
             ]
         ];
@@ -62,8 +61,40 @@ class MyController extends BaseController {
         $data = $this->myModel->updateData();
         echo json_encode($data);
     }
-    public function getImageFileName($id) {
-        $fileName = $this->myModel->getImageFileName($id);
-        echo $fileName[0]->image;
+    public function updateImage() {
+        $id = $this->input->getPost('editImageId');
+        $data = $this->myModel->getData($id);
+        $fileName = $data[0]->image;
+
+        $validationRule = [
+            'newImage'=> [
+                'label'=> 'New Image File',
+                'rules' => [
+                    'uploaded[newImage]',
+                    'is_image[newImage]',
+                    'mime_in[newImage,image/jpg,image/jpeg,image/png]',
+                    'max_size[newImage,100]'
+                ]
+            ]
+        ];
+        if(!$this->validate($validationRule)) {
+            $error = $this->validator->getErrors();
+            $res = array(
+                'msg'=>'error',
+                'err_msg'=>$error['newImage']
+            );
+            echo json_encode($res);
+        } else {
+            $id = $this->input->getPost('editImageId');
+            $img = $this->input->getFile('newImage');
+            $img->move(ROOTPATH.'public/images');
+            $newImage = $img->getName();
+            $data = $this->myModel->updateImageData($id, $newImage);
+            $res = array(
+                'msg'=>'success',
+                'data'=>$data
+            );
+            echo json_encode($res);
+        }
     }
 }

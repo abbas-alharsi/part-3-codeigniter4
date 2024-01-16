@@ -59,7 +59,20 @@ class MyModel extends Model {
         $this->db->table('products')->where('id', $id)->update($updateData);
         return $this->getData();
     }
-    public function getImageFileName($id){
-        return $this->db->table('products')->where('id',$id)->get()->getResult();
+
+    public function updateImageData($id, $newImage){
+        $productData = $this->getData($id);
+        $prevImage = $productData[0]->image;
+
+        //delete image
+        try{
+            $this->deleteImage($prevImage);
+        } finally {
+            $updateData = array(
+                'image'=>$newImage
+            );
+            $this->db->table('products')->where('id',$id)->update($updateData);
+            return $this->getData();
+        }
     }
 }
